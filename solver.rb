@@ -1,4 +1,2 @@
-
 class Solver
-
 end
