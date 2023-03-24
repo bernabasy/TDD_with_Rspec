@@ -19,4 +19,20 @@ describe Solver do
       expect(solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe '#fizzbuzz' do
+    solver = Solver.new
+    it 'When N is divisible by 3 and 5, return "fizzbuzz"' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+    it 'When N is divisible by 3 , return "fizz"' do
+      expect(solver.fizzbuzz(9)).to eq('fizz')
+    end
+    it 'When N is divisible by 5 , return "buzz"' do
+      expect(solver.fizzbuzz(10)).to eq('buzz')
+    end
+    it 'Any other case, return N as a string' do
+      expect(solver.fizzbuzz(2)).to eq('2')
+    end
+  end
 end
