@@ -12,4 +12,11 @@ describe Solver do
         expect(solver.factorial(0)).to eq(1)
       end
     end
+
+    describe '#reverse' do
+      solver = Solver.new
+      it 'should reverse the given word' do
+        expect(solver.reverse('hello')).to eq('olleh')
+    end
+end
   end
