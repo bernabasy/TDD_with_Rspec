@@ -1,22 +1,22 @@
 require_relative '../solver'
 
 describe Solver do
-    describe '#factorial' do
-      solver = Solver.new  
-      it 'should raise an exception when number is negative' do
-        expect{ solver.factorial(-2) }.to raise_error(StandardError, 'Number cannot be negative')
-      end
-      it 'returns the factorial of the number' do
-        expect(solver.factorial(1)).to eq(1)
-        expect(solver.factorial(5)).to eq(120)
-        expect(solver.factorial(0)).to eq(1)
-      end
+  describe '#factorial' do
+    solver = Solver.new
+    it 'should raise an exception when number is negative' do
+      expect { solver.factorial(-2) }.to raise_error(StandardError, 'Number cannot be negative')
     end
-
-    describe '#reverse' do
-      solver = Solver.new
-      it 'should reverse the given word' do
-        expect(solver.reverse('hello')).to eq('olleh')
+    it 'returns the factorial of the number' do
+      expect(solver.factorial(1)).to eq(1)
+      expect(solver.factorial(5)).to eq(120)
+      expect(solver.factorial(0)).to eq(1)
     end
-end
   end
+
+  describe '#reverse' do
+    solver = Solver.new
+    it 'should reverse the given word' do
+      expect(solver.reverse('hello')).to eq('olleh')
+    end
+  end
+end
