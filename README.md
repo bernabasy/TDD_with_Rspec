@@ -94,9 +94,7 @@ Install this project with:
 
 - Use this project as a step to learning to practice building backend applications with Ruby and OOP concepts.
 - > run `rspec spec` to see tests.
-- > run `irb` from the terminal"
-- > then rb(solver):001:0> `require_relative './solver.rb'` (the file you want to test `eg './solver.rb'`)
-- > => true (this will show) press enter
+- > run `irb` from the terminal.
 - > then irb(solver):002:0> `puts + a method` (the method you want to test)
 
 ## 👥 Author <a name="authors"></a>
