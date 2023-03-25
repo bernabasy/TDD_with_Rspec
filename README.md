@@ -85,7 +85,6 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-- GitHub Actions
 - Linters
 - Rubocop
 - gem install rspec
